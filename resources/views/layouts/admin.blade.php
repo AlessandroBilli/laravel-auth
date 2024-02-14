@@ -65,6 +65,16 @@
                             </li>
                         </ul>
 
+                        <div class="position-sticky pt-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white {{ Route::currentRouteName() == 'post' ? 'bg-secondary' : '' }}"
+                                        href="{{ route('admin.post') }}">
+                                        <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Post
+                                    </a>
+                                </li>
+                            </ul>
+
                         <nav class="navbar bg-body-tertiary">
                             <div class="container-fluid">
                               <form class="d-flex" role="search">
